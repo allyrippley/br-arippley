@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Map from '../map';
+import Map from '../../components/map/single';
 
 class RestaurantListContainer extends Component {
   constructor(props) {

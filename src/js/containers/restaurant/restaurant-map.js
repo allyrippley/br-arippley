@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { activeRestaurantClear } from '../../actions/restaurant-actions';
 import { getRestaurantsById } from '../../reducers';
-import Map from '../map';
+import Map from '../../components/map';
 
 
 class AppContainer extends Component {
