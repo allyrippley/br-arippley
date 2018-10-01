@@ -37,8 +37,7 @@ class RestaurantMap extends Component {
         marginRight: 'auto'
       };
       
-      const { restaurants, activeRestaurant } = this.props;
-      const distance = this.state.distance && Number(this.state.distance);
+      const { restaurants } = this.props;
 
       return (restaurants && restaurants.length > 0) ? (
         <Map

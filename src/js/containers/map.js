@@ -4,7 +4,7 @@ import SingleMap from '../components/map/single';
 
 export default class MapContainer extends Component {
   render() {
-    const { restaurants, activeRestaurant, extendedProps } = this.props;
+    const { restaurants, activeRestaurant } = this.props;
 
     return activeRestaurant ? (
       <SingleMap
