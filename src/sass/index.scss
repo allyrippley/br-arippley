@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Avenir Next Demi Bold";
+  src: url("../assets/fonts/Prompt-Medium.woff") format('woff');
+}
+@font-face {
+  font-family: "Avenir Next Regular";
+  src: url("../assets/fonts/Prompt-Light.woff") format('woff');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-family: 'Avenir Next Demi Bold';
+}
+
+.lunch-tyme-container {
+  @import './_header.scss';
+  @import './_restaurant.scss';
+  @import './_footer.scss';
+  @import './_info.scss';
+}

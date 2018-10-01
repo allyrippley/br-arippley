@@ -1,0 +1,32 @@
+
+.footer-container {
+  display: flex;
+  color: #fff;
+  max-height: 56px;
+  justify-content: space-around;
+  background-color: #2a2a2a;
+  font-size: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  .footer-button-container {
+    text-align: center;
+    padding: 10px;
+    color: #bbb;
+    &.active {
+      color: #fff;
+    }
+  }
+  
+  .footer-button-icon {
+    height: 24px;
+    width: auto;
+  }
+}
+@media screen and (min-width: 600px) {
+  .footer-container {
+    display: none;
+  }
+} 

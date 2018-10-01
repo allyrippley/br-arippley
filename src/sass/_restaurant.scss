@@ -1,0 +1,87 @@
+.restaurant-list-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 56px;
+  
+  .restaurant-container {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    
+    .restaurant-details {
+      color: #fff;
+      margin: 10px;
+    }
+
+    .restaurant-name {
+      font-size: 16px;
+    }
+      
+    .restaurant-category {
+      font-size: 12px;
+      font-family: 'Avenir Next Regular';
+    }
+    
+    .google-map {
+      height: 200px;
+    }
+  }
+  
+  @media screen and (min-width: 400px) {
+    .restaurant-container {
+      width: 50%;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.restaurant-details-container {
+  display: flex;
+  flex-direction: column;
+  
+  .restaurant-details-bar {
+    background-color: #34b379;
+    color: #fff;
+    padding: 10px;
+    
+    .restaurant-details-name {
+      font-size: 1.2em;
+    }
+    
+    .restaurant-details-category {
+      font-family: 'Avenir Next Regular';
+    }
+  }
+  
+  .restaurant-details-info-container {
+    font-family: 'Avenir Next Regular';
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-around;
+    max-height: 200px;
+  }
+}
+
+.loading-spinner-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  .loading-spinner {
+    animation: loading-spinner infinite 3s linear reverse;
+    margin-top: 50px;
+    height: 40px;
+    filter: drop-shadow(1px 1px 3px black);
+  }
+}
+
+@keyframes loading-spinner {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
